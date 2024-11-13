@@ -180,22 +180,67 @@ body {
     text-align: center;
 }
 
-/* Seção Contato */
+/* Estilo da Seção Contato */
+/* Ajustes na Seção de Contato */
 #contato {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     color: #ffffff;
-    padding: 60px 20px;
+    padding: 80px 20px; /* Aumentei o padding para dar mais espaçamento */
+    margin-bottom: 80px; /* Aumentei a margem inferior */
+}
+
+.contact-photo {
+    width: 180px; /* Aumentei o tamanho da imagem */
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px; /* Aumentei o espaço abaixo da foto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .contact-info {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    padding: 25px 35px; /* Aumentei o padding interno */
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 500px; /* Largura máxima ajustada */
+    text-align: left;
+    margin-bottom: 40px; /* Aumentei a margem inferior */
 }
 
+/* Estilo dos Links e Ícones */
+.contact-info p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsividade para Contato */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}
 /* Responsividade */
 @media (max-width: 768px) {
     #home h1, #sobre h2, #formacao h2 {
