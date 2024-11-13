@@ -102,8 +102,6 @@ body {
     font-size: 1.1em;
 }
 
-
-
 /* Estilo dos Cards de Projetos */
 .project-cards {
     display: flex;
@@ -124,6 +122,9 @@ body {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
+
+
+
 
 /* Estilos da Seção de Tecnologias com Categorias */
 .tech-categories {
