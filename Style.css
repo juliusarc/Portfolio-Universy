@@ -155,7 +155,7 @@ body {
 }
 
 .project-card h3 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #ffdd57;
     margin-bottom: 15px;
 }
@@ -192,12 +192,14 @@ body {
     font-size: 1.1em;
     display: inline-block;
     margin-top: 10px;
+    transition: color 0.3s;
 }
 
 .project-link:hover {
     text-decoration: underline;
     color: #e6e600;
 }
+
 
 /* Responsividade para Projetos */
 @media (max-width: 768px) {
