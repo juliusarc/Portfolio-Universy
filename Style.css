@@ -106,21 +106,68 @@ body {
 .project-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .project-card {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-    transition: transform 0.2s;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    color: #ffffff;
 }
 
 .project-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(255, 255, 255, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.6em;
+    color: #ffdd57;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.project-details {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.project-details li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.project-details li:before {
+    content: "✓"; /* Ícone de check */
+    color: #ffdd57;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.project-link {
+    color: #ffdd57;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-link:hover {
+    text-decoration: underline;
 }
 
 
