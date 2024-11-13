@@ -1,30 +1,26 @@
-// Big Bang Animation
-document.addEventListener("DOMContentLoaded", () => {
-    const bigBang = document.querySelector(".big-bang");
-    setTimeout(() => {
-        bigBang.style.opacity = "0";
-        bigBang.style.transition = "opacity 2s";
-        setTimeout(() => {
-            bigBang.style.display = "none";
-        }, 2000);
-    }, 3000);
+// Animação de rolagem para mostrar projetos
+window.addEventListener("scroll", function() {
+    var projects = document.querySelectorAll('.project-card');
+
+    projects.forEach(function(project) {
+        var position = project.getBoundingClientRect();
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            project.classList.add("fade-in-visible");
+        } else {
+            project.classList.remove("fade-in-visible");
+        }
+    });
 });
 
-// Efeito de partículas (exemplo básico com um background de estrelas aleatórias)
-function createStars() {
-    const starContainer = document.createElement("div");
-    starContainer.classList.add("stars");
-    document.body.appendChild(starContainer);
+// Filtro de projetos
+function filterProjects(category) {
+    var projects = document.querySelectorAll('.project-card');
 
-    for (let i = 0; i < 100; i++) {
-        const star = document.createElement("div");
-        star.classList.add("star");
-        const x = Math.floor(Math.random() * window.innerWidth);
-        const y = Math.floor(Math.random() * window.innerHeight);
-        star.style.left = `${x}px`;
-        star.style.top = `${y}px`;
-        starContainer.appendChild(star);
-    }
+    projects.forEach(function(project) {
+        if (project.classList.contains(category) || category === 'all') {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    });
 }
-
-createStars();
