@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Universo</title>
+    <title>Portfólio Galáxia Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <style>
-        /* Fundo com imagem de nebulosa */
+        /* Fundo com gradiente animado de "galáxia digital" */
         body {
             font-family: Arial, sans-serif;
-            background: url('./img/img.png') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(135deg, #1d1f27, #090c20);
+            background-size: 400% 400%;
+            animation: galaxy-animation 15s ease infinite;
             color: #ffffff;
             overflow-x: hidden;
         }
+
+        /* Animação do fundo para criar uma galáxia digital */
+        @keyframes galaxy-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
     </style>
-    <!-- Big Bang Animation -->
+
+    <!-- Big Bang Animation (Alterado para "Galáxia Digital") -->
     <div class="big-bang">
-        <h1>Bem-vindo ao Meu Universo</h1>
+        <h1>Bem-vindo à Minha Galáxia Digital</h1>
     </div>
 
-    <!-- Navbar Galáctica -->
+    <!-- Navbar Digital -->
     <nav class="navbar">
     <ul>
         <li><a href="#home">Home</a></li>
@@ -33,134 +42,124 @@
         <li><a href="#contato">Contato</a></li>
     </ul>
     </nav>
- 
 
+    <!-- Seção Home -->
+    <section id="home" class="section">
+        <div class="section-content">
+            <h1>Olá, me chamo Julius Cesar</h1>
+            <p>Tenho 23 anos e sou desenvolvedor back-end com o objetivo de se tornar full-stack.</p>
+        </div>
+    </section>
 
-<!-- Seção Home -->
-<section id="home" class="section">
-    <div class="section-content">
-        <h1>Olá, me chamo Julius Cesar</h1>
-        <p>Tenho 23 anos e sou desenvolvedor back-end com o objetivo de se tornar full-stack.</p>
-    </div>
-</section>
-
-<!-- Seção Sobre Mim -->
-<section id="sobre" class="section">
-    <div class="section-content">
-        <h2>Sobre Mim</h2>
-        <p>Atualmente atuo como suporte de TI, mas estou em busca de uma oportunidade na área de desenvolvimento, onde possa aplicar e expandir minhas habilidades. Minha paixão por tecnologia teve início na adolescência e se fortaleceu durante minha graduação em Análise e Desenvolvimento de Sistemas, onde adquiri uma base sólida em programação e desenvolvimento de soluções.</p>
-    </div>
-</section>
-
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="section">
+        <div class="section-content">
+            <h2>Sobre Mim</h2>
+            <p>Atualmente atuo como suporte de TI, mas estou em busca de uma oportunidade na área de desenvolvimento, onde possa aplicar e expandir minhas habilidades. Minha paixão por tecnologia teve início na adolescência e se fortaleceu durante minha graduação em Análise e Desenvolvimento de Sistemas, onde adquiri uma base sólida em programação e desenvolvimento de soluções.</p>
+        </div>
+    </section>
 
     <!-- Seção Tecnologias -->
-<section id="tecnologias" class="section">
-    <h2>Mapeamento de Competências</h2>
-    <div class="tech-categories">
-        <div class="tech-category">
-            <h3>Frontend</h3>
-            <div class="tech-list">
-                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+    <section id="tecnologias" class="section">
+        <h2>Competências Tecnológicas</h2>
+        <div class="tech-categories">
+            <div class="tech-category">
+                <h3>Frontend</h3>
+                <div class="tech-list">
+                    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Backend</h3>
+                <div class="tech-list">
+                    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
+                    <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
+                    <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring">
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Banco de Dados</h3>
+                <div class="tech-list">
+                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                    <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server">
+                </div>
             </div>
         </div>
-        <div class="tech-category">
-            <h3>Backend</h3>
-            <div class="tech-list">
-                <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
-                <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white" alt=".NET">
-                <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring">
+    </section>
+
+    <!-- Seção Portfolio -->
+    <section id="portfolio" class="section">
+        <h2>Projetos</h2>
+        <div class="project-cards">
+            <!-- Projeto 1: WhiskyHub -->
+            <div class="project-card">
+                <h3>WhiskyHub</h3>
+                <p>Site para venda de Whisky, com sistema de login e cadastro de usuários, utilizando Blazor.</p>
+                <ul class="project-details">
+                    <li>Funcionalidades de login e cadastro seguro para usuários</li>
+                    <li>Catálogo de produtos com diferentes opções de Whisky</li>
+                    <li>Desenvolvido com Blazor para uma experiência interativa e responsiva</li>
+                </ul>
+                <a href="https://github.com/juliusarc/WhiskyHub" target="_blank" class="project-link">Ver Projeto</a>
+            </div>
+
+            <!-- Projeto 2: Register-Tec -->
+            <div class="project-card">
+                <h3>Register-Tec</h3>
+                <p>Backend desenvolvido em ASP.NET com banco de dados MySQL e interface em HTML/CSS.</p>
+                <ul class="project-details">
+                    <li>Validação de CPF para garantir a precisão dos dados</li>
+                    <li>Tratamento de exceções eficiente para estabilidade da aplicação</li>
+                    <li>Foco em usabilidade e eficiência para aplicações empresariais</li>
+                </ul>
+                <a href="https://github.com/juliusarc/Register-Tec" target="_blank" class="project-link">Ver Projeto</a>
+            </div>
+
+            <!-- Projeto 3: School-Project -->
+            <div class="project-card">
+                <h3>School-Project</h3>
+                <p>Projeto para gestão de empréstimos de livros, utilizando o banco de dados H2.</p>
+                <ul class="project-details">
+                    <li>Sistema de cadastro de livros e usuários</li>
+                    <li>Gerenciamento de empréstimos e devoluções</li>
+                    <li>Desenvolvido com banco de dados H2 para fácil integração e testes</li>
+                </ul>
+                <a href="https://github.com/juliusarc/School-Project" target="_blank" class="project-link">Ver Projeto</a>
             </div>
         </div>
-        <div class="tech-category">
-            <h3>Banco de Dados</h3>
-            <div class="tech-list">
-                <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL Server">
+    </section>
+
+    <!-- Seção Formação Acadêmica -->
+    <section id="formacao" class="section">
+        <h2>Perfil Acadêmico</h2>
+        <div class="education">
+            <h3>Faculdade Maurício de Nassau</h3>
+            <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
+            <p>(Fevereiro de 2022 - Dezembro de 2024)</p>
+            
+            <ul class="education-details">
+                <li>Desenvolvimento de projetos em C# com Web Forms</li>
+                <li>Criação de APIs e soluções backend em Spring</li>
+                <li>Fundamentos de banco de dados e SQL</li>
+                <li>Experiência em programação orientada a objetos</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <h2>Contato Digital</h2>
+        <div class="contact-content">
+            <img src="img/Ju.jpg" alt="Foto de Julius Cesar" class="contact-photo">
+            <div class="contact-info">
+                <p><span class="contact-icon">📧</span><strong>Email:</strong> <a href="mailto:julius.cgm@gmail.com">julius.cgm@gmail.com</a></p>
+                <p><span class="contact-icon">🔗</span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/julius-cesar-723907226/" target="_blank">Julius Cesar</a></p>
+                <p><span class="contact-icon">🐙</span><strong>GitHub:</strong> <a href="https://github.com/juliusarc/" target="_blank">Julius Arc</a></p>
             </div>
         </div>
-        
-    </div>
-</section>
-
-
-
-<!-- Seção Portfolio -->
-<section id="portfolio" class="section">
-    <h2>Projetos</h2>
-    <div class="project-cards">
-        <!-- Projeto 1: WhiskyHub -->
-        <div class="project-card">
-            <h3>WhiskyHub</h3>
-            <p>Site para venda de Whisky, com sistema de login e cadastro de usuários, utilizando Blazor.</p>
-            <ul class="project-details">
-                <li>Funcionalidades de login e cadastro seguro para usuários</li>
-                <li>Catálogo de produtos com diferentes opções de Whisky</li>
-                <li>Desenvolvido com Blazor para uma experiência interativa e responsiva</li>
-            </ul>
-            <a href="https://github.com/juliusarc/WhiskyHub" target="_blank" class="project-link">Ver Projeto</a>
-        </div>
-
-          <!-- Projeto 2: Register-Tec -->
-          <div class="project-card">
-            <h3>Register-Tec</h3>
-            <p>Backend desenvolvido em ASP.NET com banco de dados MySQL e interface em HTML/CSS.</p>
-            <ul class="project-details">
-                <li>Validação de CPF para garantir a precisão dos dados</li>
-                <li>Tratamento de exceções eficiente para estabilidade da aplicação</li>
-                <li>Foco em usabilidade e eficiência para aplicações empresariais</li>
-            </ul>
-            <a href="https://github.com/juliusarc/Register-Tec" target="_blank" class="project-link">Ver Projeto</a>
-        </div>
-
-
-        <!-- Projeto 3: School-Project -->
-        <div class="project-card">
-            <h3>School-Project</h3>
-            <p>Projeto para gestão de empréstimos de livros, utilizando o banco de dados H2.</p>
-            <ul class="project-details">
-                <li>Sistema de cadastro de livros e usuários</li>
-                <li>Gerenciamento de empréstimos e devoluções</li>
-                <li>Desenvolvido com banco de dados H2 para fácil integração e testes</li>
-            </ul>
-            <a href="https://github.com/juliusarc/School-Project" target="_blank" class="project-link">Ver Projeto</a>
-        </div>
-    </div>
-</section>
-
-
-<!-- Seção Formação Acadêmica -->
-<section id="formacao" class="section">
-    <h2>Perfil Acadêmico</h2>
-    <div class="education">
-        <h3>Faculdade Maurício de Nassau</h3>
-        <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
-        <p>(Fevereiro de 2022 - Dezembro de 2024)</p>
-        
-        <ul class="education-details">
-            <li>Desenvolvimento de projetos em C# com Web Forms</li>
-            <li>Criação de APIs e soluções backend em Spring</li>
-            <li>Fundamentos de banco de dados e SQL</li>
-            <li>Experiência em programação orientada a objetos</li>
-        </ul>
-    </div>
-</section>
-
-
-
-<!-- Seção Contato -->
-<section id="contato" class="section">
-    <h2>Nebulosa de Contato</h2>
-    <div class="contact-content">
-        <img src="img/Ju.jpg" alt="Foto de Julius Cesar" class="contact-photo">
-        <div class="contact-info">
-            <p><span class="contact-icon">📧</span><strong>Email:</strong> <a href="mailto:julius.cgm@gmail.com">julius.cgm@gmail.com</a></p>
-            <p><span class="contact-icon">🔗</span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/julius-cesar-723907226/" target="_blank">Julius Cesar</a></p>
-            <p><span class="contact-icon">🐙</span><strong>GitHub:</strong> <a href="https://github.com/juliusarc/" target="_blank">Julius Arc</a></p>
-        </div>
-    </div>
-</section>
+    </section>
 
     <script src="JavaScript.js"></script>
 </body>
